@@ -101,4 +101,13 @@ function showScore() {
 	nextButton.style.display = "block";
 }
 
+function handleNextButton() {
+	currentQuestionindex++;
+	if (currentQuestionindex < questions.length) {
+		showQuestion();
+	} else {
+		showScore();
+	}
+}
+
 startQuiz();
