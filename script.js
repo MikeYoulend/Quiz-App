@@ -110,4 +110,12 @@ function handleNextButton() {
 	}
 }
 
+nextButton.addEventListener("click", () => {
+	if (currentQuestionindex < questions.length) {
+		handleNextButton();
+	} else {
+		startQuiz();
+	}
+});
+
 startQuiz();
